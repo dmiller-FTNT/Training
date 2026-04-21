@@ -17,7 +17,9 @@ Lab Tasks
 	- Check your Fortigate IP
 	- Check Fortigate Default route
 
-2. Authenticator - Tim
+2. Connecting Physical Fortigate - Tim
+
+3. Authenticator - Tim
 	- Create Root Cert **[pre-created]**
 	- Create Intermediate signed by root **[pre-created]**
 	- Create star.certificate gui **[pre-created]**
@@ -25,7 +27,7 @@ Lab Tasks
 	- Create CA cert for SSL Decryption
 	- Possibly create device certs?
 
-3. Basic FortiDevices Setup - Tim
+4. Basic FortiDevices Setup - Tim
 	- Setup Fortilink
 	- Create APMgmt Vlan
 	- Create User Vlan
@@ -38,30 +40,30 @@ Lab Tasks
 	- Add AP's and Switches 
 	- Authorize AP and switch
 
-4. WIDS Labs - Derek
+5. WIDS Labs - Derek
 
-5. AIOps setup - Derek
+6. AIOps setup - Derek
 
-6. SSID Setups - Derek
+7. SSID Setups - Derek
 	- Corporate SSID 
 	- Guest SSID 
 	- MPSK SSID
 
-7. Assigning certificates - Tim ( Might do without need )
+8. Assigning certificates - Tim ( Might do without need )
 
-8. Fortigate + AIOPs Lab - Derek
+9. Fortigate + AIOPs Lab - Derek
 
-9. Event Log Forwarder - Derek
+10. Event Log Forwarder - Derek
 
-10. SDWAN Configuration - Tim
+11. SDWAN Configuration - Tim
 
-11. Firewall Policies - Tim
+12. Firewall Policies - Tim
 	- SSL Decryption ( Corporate )
 
-12. Testing and connecting - Derek / Tim
+13. Testing and connecting - Derek / Tim
 
-13. Dashboards and Troubleshooting - Derek
+14. Dashboards and Troubleshooting - Derek
 
-14. Data Retention - Derek
+15. Data Retention - Derek
 
-15. AI-DARRP - Derek
+16. AI-DARRP - Derek

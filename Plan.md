@@ -18,9 +18,9 @@ Lab Tasks
 	- Check Fortigate Default route
 
 2. Authenticator - Tim
-	- Create Root Cert [pre-created]
-	- Create Intermediate signed by root [pre-created]
-	- Create star.certificate gui [pre-created]
+	- Create Root Cert **[pre-created]**
+	- Create Intermediate signed by root **[pre-created]**
+	- Create star.certificate gui **[pre-created]**
 	- Create Certificate for Wireless
 	- Create CA cert for SSL Decryption
 	- Possibly create device certs?

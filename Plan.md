@@ -1,7 +1,21 @@
-Lab Tasks - Tim
-1. FabricStudio Tasks
+
+domain = fortiacme.net
+
+| Device             | IP             | DNS           | NTP                | Hostname           |
+| ------------------ | -------------- | ------------- | ------------------ | ------------------ |
+| FortiGate          | 172.30.100.254 | 172.30.100.60 | 172.30.100.60      | fgtdc01            |
+| FortiAIOps         | 172.30.100.25  | 172.30.100.60 | 172.30.100.60      | fortiaiops         |
+| FortiManager       | 172.30.100.11  | 172.30.100.60 | ns01.fortiacme.net | fortimanager       |
+| FortiAuthenticator | 172.30.100.10  | 172.30.100.60 | ns01.fortiacme.net | fortiauthenticator |
+| FortiAnalyzer      | 172.30.100.12  | 172.30.100.60 | ns01.fortiacme.net | fortianalyzer      |
+| DNS/NTP            | 172.30.100.60  | 1.1.1.1       | pools              | ns01               |
+
+Lab Tasks 
+
+1. FabricStudio Tasks - Tim
 	- Check your Pod IP's
 	- Check your Fortigate IP
+	- Check Fortigate Default route
 
 2. Authenticator - Tim
 	- Create Root Cert
@@ -34,19 +48,19 @@ Lab Tasks - Tim
 
 7. Assigning certificates - Tim ( Might do without need )
 
-8. Fortigate + AIOPs Lab
+8. Fortigate + AIOPs Lab - Derek
 
-9. Event Log Forwarder
+9. Event Log Forwarder - Derek
 
-10. SDWAN Configuration
+10. SDWAN Configuration - Tim
 
-11. Firewall Policies
+11. Firewall Policies - Tim
 	- SSL Decryption ( Corporate )
 
-12. Testing and connecting
+12. Testing and connecting - Derek / Tim
 
-13. Dashboards and Troubleshooting
+13. Dashboards and Troubleshooting - Derek
 
-14. Data Retention
+14. Data Retention - Derek
 
-15. AI-DARRP
+15. AI-DARRP - Derek

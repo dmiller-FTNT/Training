@@ -15,8 +15,8 @@
    2.  the static default route (172.31.1xx.254) 
 
    - For example Pod2 would look like the following
-  ![](media\Lab1_1.png)
-  ![](media\Lab1-2.png)
+  ![](media/Lab1-1.png)
+  ![](media/Lab1-2.png)
 
 6. Under Device Manager add a new Model device for your Bench Fortigate with the following configuration
    - Name : FGTBr01
@@ -30,5 +30,5 @@
      - wan_interface : wan1
    - Leave the rest default
 
-    ![](media\Lab1-3.png)
-    ![](media\Lab1-4.png)
+    ![](media/Lab1-3.png)
+    ![](media/Lab1-4.png)

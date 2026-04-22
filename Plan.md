@@ -7,8 +7,8 @@ Reconfiguire Pods
  4. end
 
 ## TODO
-1. Check default gateway on ns01, seems to be broken
-2. Change template for branch to listen NTP on fortilink ( seems broken )
+1. Check default gateway on ns01, seems to be broken ( sudo ip route replace default via 172.30.100.254 dev ens4 , verify ip r / timedatectl status )
+2. Change template for branch to listen NTP on fortilink ( is broken, server dissabled need to enable and add fortilink )
 
 domain = fortiacme.net
 
@@ -57,17 +57,17 @@ Lab Tasks
 	- Possibly create device certs?
 
 4. Basic FortiDevices Setup - Tim
-	- Setup Fortilink
-	- Create APMgmt Vlan
-	- Create User Vlan
-	- Configure switch to have AP Mgmt Port and User Vlan
-	- Configure AP Operational Profile - Derek to decide ( likely 231K )
-		- Disable 2.4
-	- Setup NTP and DNS
-		- Setup DNS entries
-		- Setup Local DNS server
-	- Add AP's and Switches 
-	- Authorize AP and switch
+	- Setup Fortilink [done]
+	- Create APMgmt Vlan [done]
+	- Create User Vlan [done]
+	- Configure switch to have AP Mgmt Port and User Vlan [done]
+	- Configure AP Operational Profile - Derek to decide ( likely 231K ) [done]
+		- Disable 2.4 [done]
+	- Setup NTP and DNS [done]
+		- Setup DNS entries [done]
+		- Setup Local DNS server [done]
+	- Add AP's and Switches  [done]
+	- Authorize AP and switch [done]
 
 5. WIDS Labs - Derek
 
@@ -84,7 +84,7 @@ Lab Tasks
 
 10. Event Log Forwarder - Derek
 
-11. SDWAN Configuration - Tim
+11. SDWAN Configuration - Tim [Done]
 
 12. Firewall Policies - Tim
 	- SSL Decryption ( Corporate )

@@ -1,3 +1,13 @@
+Reconfiguire Pods
+1. Check Vlan IDs match pod ID
+2. Under Fabricstudio Terminal
+ 1. system interfaces mgmt configure
+ 2. set address 172.31.1xx.1 255.255.255.0 
+ 3. set gateway 172.31.1xx.254
+ 4. end
+
+
+
 
 domain = fortiacme.net
 

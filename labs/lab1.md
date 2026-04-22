@@ -2,21 +2,28 @@
 
 | Device       | Username/PW        |
 | ------------ | ------------------ |
-| FabricStudio | admin/fortinet1! |
-| FGTDC01      | admin/fortinet4A!! |
+| FabricStudio | admin/fortinet1!   |
+| FortiManager       | admin/fortinet4A!!  |
 
 ### Task 1 - Check on FabricStudio
 1. Log into the FabricStudio
-2. Navagate to Fabric Workspace -> fabric id 2
+2. Navagate to Fabric Workspace > fabric id 2
 3. Check that all devices are running
 4. Login into Fortimanager
 5. Verify the following on FGTDC01 are correct for your pod (xx is Pod Nunber eg 02 for pod2)
-   1.  the IP of Port2 (172.31.1xx.50) and 
-   2.  the static default route (172.31.1xx.254) 
+   1.  The IP of Port2 (172.31.1xx.50)
+   2.  The static default route (172.31.1xx.254) 
+   3.  The Pod_id variable for FGTDC01 is your pod id xx
+       -  Right Click on the device > Edit Variable Mapping
 
-   - For example Pod2 would look like the following
-  ![](media/Lab1-1.png)
-  ![](media/Lab1-2.png)
+>[!EXAMPLE]
+>For example Pod2 would look like the following
+>![](media/Lab1-1.png)
+>![](media/Lab1-2.png)
+>![](media/Lab1-6.png)
+
+>[!NOTE]
+>These should already be correct, but humans had to change these so ...
 
 ### Task 2 - Branch FGT ZTP
 
@@ -40,6 +47,9 @@
    - This might show that nothing is to be installed, thats fine 
     ![](media/Lab1-5.png)
 
-9. Lab complete move onto lab 2
+#### Lab complete move onto Lab 2
 
->As this is a wireless training Lab Most of the initial templates have been configured for you, if you're curious please take the time to look through them as they **won't** be touched on in later labs 
+>[!NOTE]
+>As this is a wireless training Lab most of the initial templates have been configured for you, if you're curious please take the time to look through them as they likely **won't** be touched on in later labs 
+
+

@@ -7,8 +7,10 @@ Reconfiguire Pods
  4. end
 
 ## TODO
-1. Check default gateway on ns01, seems to be broken ( sudo ip route replace default via 172.30.100.254 dev ens4 , verify ip r / timedatectl status )
-2. Change template for branch to listen NTP on fortilink ( is broken, server dissabled need to enable and add fortilink )
+1. Check default gateway on ns01, seems to be broken ( sudo ip route replace default via 172.30.100.254 dev ens4 , verify ip r / timedatectl status ) **[ Fixed in new Branch ]**
+2. Change template for branch to listen NTP on fortilink ( is broken, server dissabled need to enable and add fortilink ) **[ Fixed in new Branch ]**
+3. Add Further SDWAN config to support AI OPS **[ Fixed in new Branch ]**
+4. Add Interface Estimated Bandwidth as part of SD-WAN Monitoring AIOPS Lab
 
 domain = fortiacme.net
 
@@ -22,17 +24,17 @@ domain = fortiacme.net
 | FortiAnalyzer      | 172.30.100.12  | 172.30.100.60 | ns01.fortiacme.net | fortianalyzer      |
 | DNS/NTP            | 172.30.100.60  | 1.1.1.1       | pools              | ns01               |
 
-| Name               | Network         | Gateway        | Vlan ID |
-| ------------------ | --------------- | -------------- | ------- |
-| Services Vlan      | 172.30.100.0/24 | 172.30.100.254 |         |
-| Pod Vlan           | 172.31.1xx.0/24 | 172.31.1xx.254 | 1XX     |
-| Wireless MGMT Vlan | 172.30.200.0/24 | 172.30.200.254 |         |
-| FortiLink          | 10.255.1.0/24 | 10.255.1.1 |         |
-| User Vlan          | 172.30.210.0/24 | 172.30.210.254 |         |
-| Corp SSID          | 172.30.220.0/24 | 172.30.220.254 |         |
-| Guest SSID         | 172.30.230.0/24 | 172.30.230.254 |         |
-| MPSK SSID          | 172.30.240.0/24 | 172.30.240.254 |         |
-| ServicesLB         | 172.30.250.1/32 | xxx            |         |
+| Name          | Network         | Gateway        | Vlan ID |
+| ------------- | --------------- | -------------- | ------- |
+| Services Vlan | 172.30.100.0/24 | 172.30.100.254 |         |
+| Pod Vlan      | 172.31.1xx.0/24 | 172.31.1xx.254 | 1XX     |
+| AP Mgmt       | 172.30.200.0/24 | 172.30.200.254 | 200     |
+| FortiLink     | 10.255.1.0/24   | 10.255.1.1     |         |
+| User Vlan     | 172.30.210.0/24 | 172.30.210.254 | 210     |
+| Corp SSID     | 172.30.220.0/24 | 172.30.220.254 |         |
+| Guest SSID    | 172.30.230.0/24 | 172.30.230.254 |         |
+| MPSK SSID     | 172.30.240.0/24 | 172.30.240.254 |         |
+| ServicesLB    | 172.30.250.1/32 | xxx            |         |
 
 Lab Tasks 
 

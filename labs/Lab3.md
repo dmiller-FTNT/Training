@@ -17,16 +17,24 @@
    - Administrative Access : enable https and ssh
    - Radio 1 : Disabled ( 2.4Ghz from every pod = bad)
    - Radio 2 :
+     - Radio Resouce Provision : Toggle On
+     - ARRP Profile : arrp-default
      - Bands : 802.11 be/ax/ac/n/a
      - Short Guard Interval : Toggle On
-     - Transmit Power: Toggle dBm and set to 14 dBm
+     - Transmit Power: Toggle dBm and set to 10 dBm
      - SSID : Tunneled
+     - Advanced Options 
+    - Airtime-Fairness : Toggle On
    - Radio 3 :
+     - Radio Resource Provision : Toggle On
+     - ARRP Profile : arrp-default
      - Bands : 802.11 be/ax
      - Channel Width : 80MHz
      - Short Guard Interval : Toggle On
-     - Transmit Power: Toggle dBm and set to 17 dBm
+     - Transmit Power: Toggle Percent : 100%
      - SSID : Tunneled
+     - Advanced Options 
+     - Airtime-Fairness : Toggle On
    - Radio 4:
      - Mode : Dedicated to Monitor
      - WIDS Profile : default

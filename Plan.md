@@ -38,6 +38,7 @@ Lab Tasks
 	- Check your Pod IP's [done]
 	- Check your Fortigate IP's [done]
 	- Check Fortigate Default Route [done]
+	- Check Fortimanager Pod ID [done]
 
 2. Connecting Physical Fortigate - Tim
 	- ~~Connect to fortimanager [done]~~

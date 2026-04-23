@@ -34,10 +34,11 @@
    - Add to device group : Branches
    - Assign Policy Package : FGTBranch
    - Provisioning Templates : Branch_Group
+   - Certificate Templates : FMG_VPN
    - Edit Meta variables and change the mapping value for
      - pod_ip : [ your pod nummber ] eg 02
      - wan_interface : wan1
-   - Leave the rest default
+   - Leave the rest default and hit Next
 
     ![](media/Lab1-3.png)
     ![](media/Lab1-4.png)

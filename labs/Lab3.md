@@ -31,6 +31,9 @@
      - Mode : Dedicated to Monitor
      - WIDS Profile : default
    - Leave everything else as Default and click OK
+   - Double check everything looks right
+
+![](media/Lab3-3.png)
 
 >[!Note]
 >As you haven't added the AP you you'll need to toggle "View All Profiles" to make it visable
@@ -42,6 +45,8 @@
    - Serial Number : FP241K****000000
    - Name: AP-241K-01
    - FortiAP Profile: FAP-241K-SELab
+>[!caution]
+>If you're not using a FP241K replace the first 6 of the SN with the first 6 of the actual Switch SN you have
  - Click OK
 
 ### Policy for NTP / DNS
@@ -60,6 +65,8 @@
     - Destination : Select DC Services
     - Service : DNS and NTP
    - Leave the rest Default, Click OK, fill in change note
+
+![](media/Lab3-4.png)
 
 6. Install changes and connect your AP to Port1
     - You can either wait for it to finish or continue on this will take around 5 - 10 minutes to autolink reboot and finish

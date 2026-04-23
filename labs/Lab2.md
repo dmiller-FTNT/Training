@@ -17,6 +17,8 @@
    - Fortigate : FGTBr01
    - Serial Number : SM10GF****000000
    - Name : FS-SM10GF-01
+>[!caution]
+>If you're not using a SM10FG replace the first 6 of the SN with the first 6 of the actual Switch SN you have
 3. click ok
 
 ![](media/Lab2-1.png)
@@ -99,7 +101,7 @@
 
 ![](media/Lab2-9.png)
 
->[!WARNING]
+>[!danger]
 > There seems to be a bug with this Beta version of Manager/Gate that causes the Netmask of DHCP servers not to be correctly passed to the fortigate. Please Log onto the Fortigate directly after the install and check that your server ranges for the two vlans you created have a valid Netmask, they will likely have a 0.0.0.0
 > ![](media/Lab2-10.png)
 > After you've fixed these go ahead and do a quick install on FGTBr01, it will go back to happy

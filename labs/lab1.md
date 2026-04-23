@@ -44,7 +44,7 @@
     ![](media/Lab1-4.png)
 
 7. Connect your fortigate's WAN1 to the lab connection and power the device up
-8. Wait for the device to autolink, once complete run and syncronized, run a quick install
+8. Wait for the device to autolink, once complete run and syncronized, **run a quick install**
    - This might show that nothing is to be installed, thats fine 
     ![](media/Lab1-5.png)
 

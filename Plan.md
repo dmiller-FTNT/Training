@@ -44,11 +44,11 @@ Lab Tasks
 	- Check Fortigate Default Route [done]
 
 2. Connecting Physical Fortigate - Tim
-	- Connect to fortimanager [done]
-	- Configure Branch based on Template [done]
-	- Add metavariables for pod_id and wan_interface [done]
-	- Powerup Fortigate and connect [done]
-	- Watch the magic [done]
+	- ~~Connect to fortimanager [done]~~
+	- ~~Configure Branch based on Template [done]~~
+	- ~~Add metavariables for pod_id and wan_interface [done]~~
+	- ~~Powerup Fortigate and connect [done]~~
+	- ~~Watch the magic [done]~~
 
 3. Authenticator - Tim
 	- Create Root Cert **[pre-created]** [done]
@@ -59,17 +59,17 @@ Lab Tasks
 	- Possibly create device certs?
 
 4. Basic FortiDevices Setup - Tim
-	- Setup Fortilink [done]
-	- Create APMgmt Vlan [done]
-	- Create User Vlan [done]
-	- Configure switch to have AP Mgmt Port and User Vlan [done]
-	- Configure AP Operational Profile - Derek to decide ( likely 231K ) [done]
-		- Disable 2.4 [done]
-	- Setup NTP and DNS [done]
-		- Setup DNS entries [done]
-		- Setup Local DNS server [done]
-	- Add AP's and Switches  [done]
-	- Authorize AP and switch [done]
+	- ~~Setup Fortilink [done]~~
+	- ~~Create APMgmt Vlan [done]~~
+	- ~~Create User Vlan [done]~~
+	- ~~Configure switch to have AP Mgmt Port and User Vlan [done]~~
+	- ~~Configure AP Operational Profile - Derek to decide ( likely 231K ) [done]~~
+		- ~~Disable 2.4 [done]~~
+	- ~~Setup NTP and DNS [done]~~
+		- ~~Setup DNS entries [done]~~
+		- ~~Setup Local DNS server [done]~~
+	- ~~Add AP's and Switches  [done]~~
+	- ~~Authorize AP and switch [done]~~
 
 5. WIDS Labs - Derek
 
@@ -86,7 +86,7 @@ Lab Tasks
 
 10. Event Log Forwarder - Derek
 
-11. SDWAN Configuration - Tim [Done]
+11. ~~SDWAN Configuration - Tim [Done]~~
 
 12. Firewall Policies - Tim
 	- SSL Decryption ( Corporate )

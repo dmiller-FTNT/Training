@@ -97,3 +97,33 @@
 ![](media/Lab3-2.png)
 
 #### Lab complete move onto Lab 4
+
+
+Additional SSID profiles
+
+802.1X Auth with FortiAuthenticator.
+
+Configure FAC as Radius Server -> 
+
+Create User 1 will AUTH with returned vlan 150
+Create User 2 will Auth with returned vlan 160
+
+Configure on FAC FortiGates as Radius Client
+
+Test User Auth from FortiGate to ensure connectivity.
+
+Create SSID "PodNumber"8021x Auth this will use FAC for Radius
+
+Under this VLAN create two VLANs 150 and 160
+
+172.30.150.x/24
+172.30.160.x/24
+
+MPSK 
+
+Create new MPSK Profile
+
+Devices-WPA2
+
+
+

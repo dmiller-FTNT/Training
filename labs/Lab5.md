@@ -4,23 +4,75 @@ SSID Configuration
 
 Additional SSID profiles
 
+Prework the 802.1x AUTH SSID will operate with Bridged SSID.
+
+the MPSK SSID will be in tunnel mode this is to show the concepts of the two approaches.
+
+Create two more use FSW vlans and ensure they are allowed on the FortiSwitch VLANs 140 and VLANS 150
+Dont forget to create a policy that can access the internet.
+
+
+
+
 802.1X Auth with FortiAuthenticator.
 
-Configure FAC as Radius Server -> 
+Configure FAC as Radius Server -> FAC
 
-Create User 1 will AUTH with returned vlan 150
-Create User 2 will Auth with returned vlan 160
+Create User 1 will AUTH with returned vlan 140
+Create User 2 will Auth with returned vlan 150
 
-Configure on FAC FortiGates as Radius Client
+config wireless-controller vap
+    edit 8021xSecureWPA3
+        set ssid PodNumber-8021x
+        set security wpa3-only-enterprise
+        set pmf enable
+        set 80211v disable
+        set fast-bss-transition enable
+        set ft-mobility-domain 1200
+        set auth radius
+        set radius-server FAC
+        set local-bridging enable
+        set schedule always
+        set vlanid 20
+        set dynamic-vlan enable
+        set multicast-rate 24000
+        set mu-mimo disable 
+        set broadcast-suppression dhcp-up dhcp-starvation dhcp-ucast arp-known arp-poison netbios-ns netbios-ds
+        set radio-sensitivity enable
+        set radio-5g-threshold "-65"
+        set radio-2g-threshold "-70"
+        set rates-11a 24-basic 36 48-basic 54
+        set rates-11bg 24-basic 36 48-basic 54
+        set rates-11n-ss12 mcs3/1 mcs4/1 mcs5/1 mcs6/1 mcs7/1 mcs11/2 mcs12/2 mcs13/2 mcs14/2 mcs15/2
+        set rates-11n-ss34 mcs19/3 mcs20/3 mcs21/3 mcs22/3 mcs23/3 mcs27/4 mcs28/4 mcs29/4 mcs30/4 mcs31/4
+        set beacon-advertising name
+    next
 
-Test User Auth from FortiGate to ensure connectivity.
+    config wireless-controller vap
+    edit 8021xSecureWPA2
+        set ssid PodNumber-8021x
+        set security wpa2-only-enterprise
+        set fast-bss-transition enable
+        set ft-mobility-domain 1201
+        set auth radius
+        set radius-server FAC
+        set local-bridging enable
+        set schedule "always"
+        set vlanid 20
+        set dynamic-vlan enable
+        set multicast-rate 24000
+        set mu-mimo disable 
+        set radio-sensitivity enable
+        set radio-5g-threshold "-65"
+        set radio-2g-threshold "-70"
+        set rates-11a 24-basic 36 48-basic 54
+        set rates-11bg 24-basic 36 48-basic 54
+        set rates-11n-ss12 mcs3/1 mcs4/1 mcs5/1 mcs6/1 mcs7/1 mcs11/2 mcs12/2 mcs13/2 mcs14/2 mcs15/2
+        set rates-11n-ss34 mcs19/3 mcs20/3 mcs21/3 mcs22/3 mcs23/3 mcs27/4 mcs28/4 mcs29/4 mcs30/4 mcs31/4
+        set beacon-advertising name
+    next
 
-Create SSID "PodNumber"8021x Auth this will use FAC for Radius
 
-Under this VLAN create two VLANs 150 and 160
-
-172.30.150.x/24
-172.30.160.x/24
 
 MPSK 
 
@@ -133,4 +185,12 @@ Set Mode to Multiple
 Select Devices-WPA3
 Ensure Dynamic VLAN Assignment is Toggled On
 Click Ok
+
+Create VLANS under the Device SSIDs (Note although they are on the same VLAN ID they are seperate L2)
+Create a policy to allow each of the corresponding VLANS to communicate with each other along with internet.
+VLANS 160 and VLAN 170
+
+
+
+
 

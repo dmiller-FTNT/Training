@@ -72,10 +72,11 @@ Lab Tasks
 
 6. AIOps setup - Derek
 
-7. SSID Setups - Derek
+7. SSID Setups - Derek - NEEDs Smoothing out
 	- Corporate SSID 
-	- Guest SSID 
+	
 	- MPSK SSID
+	- Guest SSID 
 
 8. Assigning certificates - Tim ( Might do without need )
 

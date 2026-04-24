@@ -13,7 +13,6 @@ Dont forget to create a policy that can access the internet.
 
 
 
-
 802.1X Auth with FortiAuthenticator.
 
 Configure FAC as Radius Server -> FAC

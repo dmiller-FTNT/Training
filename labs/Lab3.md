@@ -54,10 +54,12 @@
 >As you haven't added the AP you you'll need to toggle "View All Profiles" to make it visable
 
 >[!warning]
->- Double check everything looks right, it seems to be 50/50 that the R3 Profile dosne't save. You just need to go back in and toggle it to access point instead of dedicated monitor
+>- Double check everything looks right, it seems a 50% that the R3 Profile dosne't save. You just need to go back in and toggle it to access point instead of dedicated monitor
+>##### Good
 >![](media/Lab3-3.png)
 >
-
+>##### Bad
+>![](media/Lab3-7.png)
 
 
 

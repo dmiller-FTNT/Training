@@ -134,3 +134,25 @@ Select Devices-WPA3
 Ensure Dynamic VLAN Assignment is Toggled On
 Click Ok
 
+Modify the provisioning template.
+Add the VLAN interfaces to the SSID interfaces. 
+VLANS 160 and 170
+
+On the WPA2 "PODNumber-Devices-WPA2 use the following subnets
+VLAN 160 172.30.161.x/24
+VLAN 170 172.30.171.x/24
+
+On the WPA2 "PODNumber-Devices-WPA3 use the following subnets
+VLAN 160 172.30.162.x/24
+VLAN 170 172.30.172.x/24
+
+Create a Policy to allow 172.30.161.x and 172.30.162.x to communicate with each other
+Create a Policy to allow 172.30.171.x and 172.30.172.x to communicate with each other
+
+Create a Policy to allow all of these subnets to go to the internet.
+
+Consider ways to resolve this and limitations to this with Bonjour and Multicast. What are some approaches to resolve this issue other than "bridging the ssid"
+
+Connect your devices to these SSID.
+Use the users you created earlier.
+

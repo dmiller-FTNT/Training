@@ -1,5 +1,9 @@
 FortiAIOps intergration
 
+Note that FortiAnalyzer in your lab is set up to forward all logs to AIOPS.
+Note that this is done for you in this lab however in realworld deployments this needs to be done.
+You can inspect the configuration in FAZ
+
 Login to AIOps
 
 In Security Fabrick Menu 

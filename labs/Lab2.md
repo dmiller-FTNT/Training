@@ -75,7 +75,6 @@
       - Netmask : Specify - 255.255.255.0
       - Change DNS to be "Same as System DNS"
       - Under Advanced Change NTP to "Same as System NTP"
-      - Change Wireless Controllers to "Same as Interface IP"
       - Leave the rest Default
    - Lastly at the bottem Select Map to Normalized Interfaces and create new
    - Name : User Access
@@ -101,7 +100,8 @@
 
 ![](media/Lab2-9.png)
 
->[!danger]
+>[!note]
+>###### This appears to be fixed in 8.0 Release but I'm leaving it here incase you run into it
 > There seems to be a bug with this Beta version of Manager/Gate that causes the Netmask of DHCP servers not to be correctly passed to the fortigate. Please Log onto the Fortigate directly after the install and check that your server ranges for the two vlans you created have a valid Netmask, they will likely have a 0.0.0.0
 > ![](media/Lab2-10.png)
 > After you've fixed these go ahead and do a quick install on FGTBr01, it will go back to happy

@@ -44,9 +44,21 @@
     ![](media/Lab1-4.png)
 
 7. Connect your fortigate's WAN1 to the lab connection and power the device up
+>[!note]
+>For ease of deployment we've added a DHCP option to point the Fortigate to Fortimanager, this should work. If it dosen't manually pointing it using the following via console connection is fine:
+>
+>config system central-management
+>set type fortimanager
+>set fmg 172.31.1xx.50
+>end
+
 8. Wait for the device to autolink, once complete run and syncronized, **run a quick install**
    - This might show that nothing is to be installed, thats fine 
     ![](media/Lab1-5.png)
+
+9.  At this point if you navagate to Device Manager > Monitors > VPN Monitor, you should see a vpn built between your desk Fortigate and your enviroment.
+
+![](media/Lab1-7.png)
 
 #### Lab complete move onto Lab 2
 

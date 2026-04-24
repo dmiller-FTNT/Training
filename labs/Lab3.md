@@ -5,10 +5,21 @@
 | FabricStudio | admin/fortinet1!   |
 | FortiManager | admin/fortinet4A!! |
 
-### Creating Operation Profile
+### Creating ARRP Profile
 1. Navagating to AP Manager > Managed FortiAPs > Operational Profiles > FortiAP Profiles
 ![](media/Lab3-1.png)
-
+2. Create a new ARRP Profile with the following settings:
+   - Name : aarp-lowdensity-highinterference
+   - Weight Managed AP : 100
+   - Weight Rogue AP : 30
+   - Weight Weather Channel : 0
+   - Weight DFS Channel : 0
+   - Threshold Channel Load : 45
+   - Leave Rest Default
+![](media/Lab3-6.png)
+### Creating Operation Profile
+1. Navagate to Operation Profiles: FortiAP Profiles
+![](media/Lab3-5.png)
 2. Create a new Profile
    - Name : FAP-241K-SELab
    - Platform : FortiAP-241k
@@ -39,12 +50,16 @@
      - Mode : Dedicated to Monitor
      - WIDS Profile : default
    - Leave everything else as Default and click OK
-   - Double check everything looks right
-
-![](media/Lab3-3.png)
-
 >[!Note]
 >As you haven't added the AP you you'll need to toggle "View All Profiles" to make it visable
+
+>[!warning]
+>- Double check everything looks right, it seems to be 50/50 that the R3 Profile dosne't save. You just need to go back in and toggle it to access point instead of dedicated monitor
+>![](media/Lab3-3.png)
+>
+
+
+
 
 ### Adding a Model AP
 3. Navagate to AP Manager > Managed FortiAPs
@@ -69,7 +84,7 @@
    - Source : **Create New Address**
      - Name : AP Mgmt Subnet
      - IP: 172.30.200.0/24
-     - Click Ok add change note and Add to source
+     - Click Ok, Add change note, and Add as a source
     - Destination : Select DC Services
     - Service : DNS and NTP
    - Leave the rest Default, Click OK, fill in change note

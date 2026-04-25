@@ -156,6 +156,10 @@ Consider ways to resolve this and limitations to this with Bonjour and Multicast
 Connect your devices to these SSID.
 Use the users you created earlier.
 
+Captive Portal based on this
+
+https://community.fortinet.com/fortiauthenticator-8/technical-tip-captive-portal-authentication-using-fortiauthenticator-with-usage-profile-135890
+
 IP Ranges for reference we are using in this lab
 
 | Name          | Network         | Gateway        | Vlan ID |

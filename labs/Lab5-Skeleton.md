@@ -8,8 +8,8 @@ Additional SSID profiles
 
 Configure FAC as Radius Server -> 
 
-Create User 1 will AUTH with returned vlan 150
-Create User 2 will Auth with returned vlan 160
+Create User 1 will AUTH with returned vlan 210
+Create User 2 will Auth with returned vlan 211
 
 Configure on FAC FortiGates as Radius Client
 
@@ -156,3 +156,17 @@ Consider ways to resolve this and limitations to this with Bonjour and Multicast
 Connect your devices to these SSID.
 Use the users you created earlier.
 
+IP Ranges for reference we are using in this lab
+
+| Name          | Network         | Gateway        | Vlan ID |
+| ------------- | --------------- | -------------- | ------- |
+| User1 Vlan     | 172.30.210.0/24 | 172.30.210.254 | 210     |
+| User2 Vlan     | 172.30.210.0/24 | 172.30.210.254 | 211     |
+| Guest SSID     | 172.30.220.0/24 | 172.30.220.254 |         |
+| Devices-WPA2 Native SSID    | 172.30.230.0/24 | 172.30.230.254 |         |
+| Devices-WPA2 Laptop    | 172.30.161.0/24 | 172.30.161.254 |160         |
+| Devices-WPA2 BYOD    | 172.30.161.0/24 | 172.30.161.254 |170         |
+| Devices-WPA3 Native SSID     | 172.30.240.0/24 | 172.30.240.254 |         |
+| Devices-WPA3 Laptop    | 172.30.162.0/24 | 172.30.162.254 | 160        |
+| Devices-WPA3 BYOD    | 172.30.172.0/24 | 172.30.172.254 | 170        |
+| ServicesLB    | 172.30.250.1/32 | xxx            |         |

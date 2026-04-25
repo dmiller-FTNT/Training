@@ -173,4 +173,3 @@ IP Ranges for reference we are using in this lab
 | Devices-WPA3 Native SSID     | 172.30.240.0/24 | 172.30.240.254 |         |
 | Devices-WPA3 Laptop    | 172.30.162.0/24 | 172.30.162.254 | 160        |
 | Devices-WPA3 BYOD    | 172.30.172.0/24 | 172.30.172.254 | 170        |
-| ServicesLB    | 172.30.250.1/32 | xxx            |         |

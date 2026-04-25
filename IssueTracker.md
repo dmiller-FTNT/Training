@@ -1,6 +1,10 @@
 ## TODO
 1. Add Interface Estimated Bandwidth as part of SD-WAN Monitoring AIOPS Lab
 2. Add to the basic lab start connections to fortianalyzer for DC and Branch as well as setup syslog forwarder for FAZ to AI-Ops
+3. Go back and Redo all the subnets to use .254 gateway and fix DHCP scopes to not include that
+4. Radius isn't allowed on the FAC network interface, go turn it on
+5. SD-WAN order is wrong... Fix it
+6. Pre Create address objects for all subnets, They don't need to do that
 
 
 #### Outstanding issues

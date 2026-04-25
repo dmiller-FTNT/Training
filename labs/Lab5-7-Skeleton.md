@@ -1,6 +1,9 @@
 SSID Configuration
 
 
+802.1x with WPA 3 [done]
+
+
 
 Additional SSID profiles
 
@@ -8,8 +11,8 @@ Additional SSID profiles
 
 Configure FAC as Radius Server -> 
 
-Create User 1 will AUTH with returned vlan 210
-Create User 2 will Auth with returned vlan 211
+Create User 1 will AUTH with returned vlan 150
+Create User 2 will Auth with returned vlan 160
 
 Configure on FAC FortiGates as Radius Client
 
@@ -134,42 +137,3 @@ Select Devices-WPA3
 Ensure Dynamic VLAN Assignment is Toggled On
 Click Ok
 
-Modify the provisioning template.
-Add the VLAN interfaces to the SSID interfaces. 
-VLANS 160 and 170
-
-On the WPA2 "PODNumber-Devices-WPA2 use the following subnets
-VLAN 160 172.30.161.x/24
-VLAN 170 172.30.171.x/24
-
-On the WPA2 "PODNumber-Devices-WPA3 use the following subnets
-VLAN 160 172.30.162.x/24
-VLAN 170 172.30.172.x/24
-
-Create a Policy to allow 172.30.161.x and 172.30.162.x to communicate with each other
-Create a Policy to allow 172.30.171.x and 172.30.172.x to communicate with each other
-
-Create a Policy to allow all of these subnets to go to the internet.
-
-Consider ways to resolve this and limitations to this with Bonjour and Multicast. What are some approaches to resolve this issue other than "bridging the ssid"
-
-Connect your devices to these SSID.
-Use the users you created earlier.
-
-Captive Portal based on this
-
-https://community.fortinet.com/fortiauthenticator-8/technical-tip-captive-portal-authentication-using-fortiauthenticator-with-usage-profile-135890
-
-IP Ranges for reference we are using in this lab
-
-| Name          | Network         | Gateway        | Vlan ID |
-| ------------- | --------------- | -------------- | ------- |
-| User1 Vlan     | 172.30.210.0/24 | 172.30.210.254 | 210     |
-| User2 Vlan     | 172.30.210.0/24 | 172.30.210.254 | 211     |
-| Guest SSID     | 172.30.220.0/24 | 172.30.220.254 |         |
-| Devices-WPA2 Native SSID    | 172.30.230.0/24 | 172.30.230.254 |         |
-| Devices-WPA2 Laptop    | 172.30.161.0/24 | 172.30.161.254 |160         |
-| Devices-WPA2 BYOD    | 172.30.161.0/24 | 172.30.161.254 |170         |
-| Devices-WPA3 Native SSID     | 172.30.240.0/24 | 172.30.240.254 |         |
-| Devices-WPA3 Laptop    | 172.30.162.0/24 | 172.30.162.254 | 160        |
-| Devices-WPA3 BYOD    | 172.30.172.0/24 | 172.30.172.254 | 170        |

@@ -5,6 +5,8 @@
 4. Radius isn't allowed on the FAC network interface, go turn it on
 5. SD-WAN order is wrong... Fix it
 6. Pre Create address objects for all subnets, They don't need to do that
+7. Create Mapped interfaces for all of the MPSK lab, they've done enough of that
+8. I've created a script for the Interfacse for MPSK Lab, just need to add it to template
 
 
 #### Outstanding issues

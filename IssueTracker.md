@@ -1,7 +1,11 @@
 ## TODO
 1. Add Interface Estimated Bandwidth as part of SD-WAN Monitoring AIOPS Lab
 2. setup syslog forwarder for FAZ to AI-Ops
-
+3. Add addresses for NS01 and all FortiDevices as premade
+4. add portal.fortiacme.com to dns server for 172.30.220.254
+5. Configure Star Cert and add it to FMG to push to FGT with root and Inter
+6. ca cert chain looks broken... fix
+7. star cert needs to be 365 days for mac to not panic
 
 
 #### Outstanding issues

@@ -1,11 +1,6 @@
 ## TODO
 1. Add Interface Estimated Bandwidth as part of SD-WAN Monitoring AIOPS Lab
 2. setup syslog forwarder for FAZ to AI-Ops
-3. Go back and Redo all the subnets to use .254 gateway and fix DHCP scopes to not include that
-4. Radius isn't allowed on the FAC network interface, go turn it on
-5. SD-WAN order is wrong... Fix it
-6. Pre Create address objects for all subnets, They don't need to do that
-7. Create Mapped interfaces for all of the MPSK lab, they've done enough of that
 
 
 
@@ -25,5 +20,10 @@
    1. Seems to be ok when you create your own profile and don't change the default, Might have been fixed in 8.0.0 Release
 7. 50% of the time when you create the custom Operational Profile for AP's the first time it switches radio 3 to monitor, independant of setting.
    1. I've added a note to the lab to check for this, the settings are saved, you just need to go back in and change it back to radio profile **[ not fixed in 8.0.0 release ]** 
-8. I've created a script for the Interfacse for MPSK Lab, just need to add it to template
-9. Add to the basic lab start connections to fortianalyzer for DC and Branch
+8. I've created a script for the Interfacse for MPSK Lab, just need to add it to template **[ Fixed in new Branch on 25th]**
+9. Add to the basic lab start connections to fortianalyzer for DC and Branch **[ Fixed in new Branch on 25th]**
+10. Radius isn't allowed on the FAC network interface, go turn it on **[ Fixed in new Branch on 25th]**
+11. SD-WAN order is wrong... Fix it **[ Fixed in new Branch on 25th]**
+12. Go back and Redo all the subnets to use .254 gateway and fix DHCP scopes to not include that **[ Fixed in new Branch on 25th]**
+13. Pre Create address objects for all subnets, They don't need to do that more than once **[ Fixed in new Branch on 25th]**
+14. Create Mapped interfaces for all of the MPSK lab, they've done enough of that **[ Fixed in new Branch on 25th]**

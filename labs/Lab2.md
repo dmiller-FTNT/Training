@@ -44,10 +44,10 @@
 6. First Vlan will be :
     - Interface Name : AP Mgmt
     - Vlan ID : 200
-    - IP/Netmask : 172.30.200.1/24
+    - IP/Netmask : 172.30.200.254/24
     - Admin Access : Ping and Secuirty Fabric Connection Enabled
     - DHCP Server Enabled
-      - Address Range : Leave default
+      - address Range : 172.30.200.2 - 172.30.200.250
       - Netmask : Specify - 255.255.255.0
       - Change DNS to be "Same as System DNS"
       - Under Advanced Change NTP to "Same as System NTP"
@@ -68,10 +68,10 @@
 7. The second Vlan:
    - Interface Name : User Access
    - Vlan ID : 210
-   - IP/Netmask : 172.30.210.1/24
+   - IP/Netmask : 172.30.210.254/24
    - Admin Access : Ping, HTTPS and SSH Enabled
    - DHCP Server Enabled
-      - Address Range : Leave default
+      - address Range : 172.30.210.2 - 172.30.210.250
       - Netmask : Specify - 255.255.255.0
       - Change DNS to be "Same as System DNS"
       - Under Advanced Change NTP to "Same as System NTP"

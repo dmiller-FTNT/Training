@@ -50,7 +50,7 @@ Set the Client Limit Type to Unlimited
 
 Set MPSK Provile to Always
 
-![alt text](image-3.png)
+![alt text](media/Lab5-7-Skeleton-3.png)
 
 Click OK
 
@@ -74,7 +74,7 @@ Set MPSK Provile to Always
 
 Click OK
 
-![alt text](image-4.png)
+![alt text](media/Lab5-7-Skeleton-4.png)
 
 Click OK
 

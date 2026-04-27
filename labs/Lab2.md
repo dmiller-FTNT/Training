@@ -94,7 +94,7 @@
 
 10. From the top use the install wizzard to install device settings only
 ![](media/Lab2-11.png)
-11. Power up and connect your Switch PortA on FGTBr01 to Port 10 on your switch
+11. Once the install is complete power up and connect your Switch PortA on FGTBr01 to Port 10 on your switch
     - You can either wait for it to finish or continue on this will take around 5 - 10 minutes to autolink reboot and finish
 
 ![](media/Lab2-9.png)

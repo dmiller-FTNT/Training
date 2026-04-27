@@ -97,7 +97,7 @@
 8. Run the install wizzard and Install Policy Package & Device Settings. Click Next
 ![](media/Lab3-8.png)
 
-9. Connect your AP to Port1
+9. Once the install is complete connect your AP to Port1
     - You can either wait for it to finish or continue on this will take around 5 - 10 minutes to autolink reboot and finish
 
 ![](media/Lab3-2.png)

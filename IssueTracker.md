@@ -44,3 +44,5 @@
     - Added
 19. Add addresses for NS01 and all FortiDevices as premade **[ Fixed in new Branch on 26th]**
     - added all but portal and fgts
+20. Fortiauthenticator default cert went dodo, regenerated it **[ Fixed in new Branch on 26th V2]**
+    - I've also fixed pod6 and pod7 so no need to worry running into this in current pods

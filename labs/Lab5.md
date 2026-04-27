@@ -11,51 +11,57 @@
 #### Preparing 802.1x Authentication
 1. Connect to FortiAuthenticator and Login
 
-2. Navagate to Certificate Managment > Local Services and Create New
-   - Certificate ID: Radius.Service
-   - Certificate Authority: fortiacme_inter_ca
+2. Navagate to Certificate Managment > End Entities > Local Services and Create New
+   - Certificate ID: Radius_Service
+   - Certificate Authority: int_fortiacme_net
    - issuer : Local CA
    - Name (CN) : radius.fortiacme.net
-   - Subject Alternate Name DNS : On and add radius.fortiacme.net
-  
+   - Subject Alternate Name > DNS : radius.fortiacme.net
+   - Click Save
 3. Navagate to Authenticaton > Radius Service > General
-4. Assign your Radius.Service to both EAP Server and RADSEC Server Certificates, And change Local CA's to the FortiAcme Intermediate
+   - Assign your Radius.Service to both EAP Server and RADSEC Server Certificates, And change Local CA's to the FortiAcme Intermediate
 ![](media/Lab5-1.png)
+   - Click Ok
 
-5. Navagate to Authenticaton > Radius Service > Clients and Create New
+1. Navagate to Authenticaton > Radius Service > Clients and Create New
    - Name : FGTBr01
    - IP/FQDN : 172.30.250.1
    - Secret : fortinet4A!!
    - Leave the rest default
 ![](media/Lab5-2.png)
-
-6. Navagate to Authenticaton > Radius Service > Policies and Create New
+   - Click Save
+1. Navagate to Authenticaton > Radius Service > Policies and Create New
     1. Radius Clients
        - Policy Name: Wireless8021x
        - Move FGTBR01 over to Chosen Clients
        - Next
-    2. Radius Criteria - Next
+    2. Radius Criteria 
+         - Next
     3. Authenticaton type
        - password/OTP Authentication
        - Accept EAP > Accept PEAP and EAP-TTLS
        - next
-    4. Identity sources - Next
+    4. Identity sources 
+         - Next
     5. Authentication Factors
         - Password only
         - next
-    6. Radius Respose - Update and Exit
+    6. Radius Respose 
+         - Save and Exit
 
-7.  Navagate to User Managment > Local Users and Create two users
+2.  Navagate to User Managment > Local Users and Create two users
     1. User 1
        - Username : user1
        - Password and confirm : fortinet4A!! 
        - Allow Radius Authentication
+       - save and save
     2. User 2
        - Username : user2
        - Password and confirm : fortinet4A!! 
        - Allow Radius Authentication
+       - save and save
 
-8. Return back into **both** users and set the following radius attributes
+3. Return back into **both** users and set the following radius attributes
     1. Radius Attrubute 1
        - Vendor : Default
        - Attribute ID : Tunnel-Type
@@ -74,10 +80,11 @@
 #### Create SSID and Vlans
 9. Logging back into Fortimanager Navagate to Policy & Objects > User & Authentication > Radius Servers and Create New
 10. Configure the Server as follows
-    - Name FortiAuthenticator
+    - Name : FortiAuthenticator
     - Primary Server Name/IP : 172.30.100.10
     - Primary Server Secret : fortinet4A!! 
     - Create new Per-Device Mapping
+      - Mapped Device : FGTBr01
       - Leave everything the same and in advanced options
         - Source IP : 172.30.250.1
     - ok and ok add change notes
@@ -127,16 +134,20 @@
 
 13. Navagate to Policy & Objects > Policy Packages > FGTBranch and Create two new policies
     1. DNS
-       - Name : 8021x Vlans -> DNS
+       - Name : 8021x Vlans -> DNS n NTP
+       - Action : Accept
        - Incomming Interface : User1 Vlan and User2 Vlan
        - Outgoing Interface : Overlay
        - Source : User1 Vlan and User2 Vlan
-       - Destination : DC Services
+       - Destination : NS01
        - Service : DNS and NTP
        - Ok
     2. Clone 8021x Vlans -> DNS and change
        - Name : 8021x Vlans -> Internet
+       - Action : Accept
+       - Incomming Interface : User1 Vlan and User2 Vlan
        - Outgoing Interface : Underlay
+       - Source : User1 Vlan and User2 Vlan
        - Destination : All
        - Service : All
        - NAT : Enabled
@@ -147,7 +158,7 @@
     - OK
 ![](media/Lab5-4.png)
 
-15. Do a full install ( policy and Device ) to FGTBr01
+1.  Do a full install ( policy and Device ) to FGTBr01
 
 #### Testing
 16. It works, Might require some accepting of certs user either user1 or user2 with the password you set

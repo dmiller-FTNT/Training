@@ -89,18 +89,18 @@ Lab Tasks
 
 8. Assigning certificates - Tim ( Might do without need )
 
-9.  Fortigate + AIOPs Lab - Derek
+9.  Fortigate + AIOPs Lab - Derek (In Lab4)
 
-10. Event Log Forwarder - Derek
+10. Event Log Forwarder - Derek (In lab 4)
 
 11. ~~SDWAN Configuration - Tim [Done]~~
 
 12. Firewall Policies - Tim
-	- SSL Decryption ( Corporate )
+	- SSL Decryption ( Corporate ) 
 
-13. Testing and connecting - Derek / Tim
+13. Testing and connecting - Derek / Tim (Lab 5+6+7+8)
 
-14. Dashboards and Troubleshooting - Derek
+14. Dashboards and Troubleshooting - Derek 
 
 15. Data Retention - Derek
 

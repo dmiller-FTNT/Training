@@ -52,7 +52,6 @@
       - Change DNS to be "Same as System DNS"
       - Under Advanced Change NTP to "Same as System NTP"
       - Change Wireless Controllers to "Same as Interface IP"
-      - Leave the rest Default
 ![](media/Lab2-4.png)
    - Lastly at the bottem Select Map to Normalized Interfaces and create new
 ![](media/Lab2-5.png)
@@ -62,10 +61,10 @@
      - Mapped Interface Name : AP Mgmt
 ![](media/Lab2-6.png)
      - Click OK and add change notes
-   - Select The Mapping you Created 
-   - Click OK again and add change notes
+   - Leave the rest Default
+   - Click OK
 
-7. The second Vlan:
+1. The second Vlan:
    - Interface Name : User Access
    - Vlan ID : 210
    - IP/Netmask : 172.30.210.254/24
@@ -75,15 +74,14 @@
       - Netmask : Specify - 255.255.255.0
       - Change DNS to be "Same as System DNS"
       - Under Advanced Change NTP to "Same as System NTP"
-      - Leave the rest Default
    - Lastly at the bottem Select Map to Normalized Interfaces and create new
    - Name : User Access
    - Per-Platform Mapping : Create New
      - Matched Platform : All
      - Mapped Interface Name : User Access
-     - Click OK and add change notes
-   - Select The Mapping you Created 
-   - Click OK again and add change notes
+     - Click OK and add change notes 
+   - Leave the rest Default
+   - Click OK
 
 >You should now have two New Vlans ![](media/Lab2-7.png)
 
@@ -95,10 +93,14 @@
 ![](media/Lab2-8.png)
 
 10. From the top use the install wizzard to install device settings only
-11. Finally Powerup and connect your Switch PortA on FGTBr01 to Port 10 on your switch
+![](media/Lab2-11.png)
+11. Once the install is complete power up and connect your Switch PortA on FGTBr01 to Port 10 on your switch
     - You can either wait for it to finish or continue on this will take around 5 - 10 minutes to autolink reboot and finish
 
 ![](media/Lab2-9.png)
+
+#### Lab complete move onto Lab 3
+
 
 >[!note]
 >###### This appears to be fixed in 8.0 Release but I'm leaving it here incase you run into it
@@ -106,4 +108,3 @@
 > ![](media/Lab2-10.png)
 > After you've fixed these go ahead and do a quick install on FGTBr01, it will go back to happy
 
-#### Lab complete move onto Lab 3

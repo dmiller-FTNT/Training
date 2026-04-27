@@ -5,6 +5,10 @@
 | FabricStudio | admin/fortinet1!   |
 | FortiManager       | admin/fortinet4A!!  |
 
+>[!DANGER]
+>Fortimanager loves doing things in order so please wait till you're advised to power on and plug in devices. Rushing that step will likely lead to errors, that you'll need to troubleshoot.
+>
+>Everything physical should be powered off and unattached at this point.
 ### Task 1 - Check on FabricStudio
 1. Log into the FabricStudio
 2. Navagate to Fabric Workspace > fabric id 2
@@ -32,13 +36,14 @@
    - Serial Number : [ your device ]
    - Device Model : [ Will populate automaticly ]
    - Add to device group : Branches
+   - Pre-Run CLI Template : FGTBr01 Prerun
    - Assign Policy Package : FGTBranch
    - Provisioning Templates : Branch_Group
    - Certificate Templates : FMG_VPN
    - Edit Meta variables and change the mapping value for
-     - pod_ip : [ your pod nummber ] eg 02
+     - pod_ip : [ your pod nummber ] eg 02 ( The Leading 0 is important for anything under 10 )
      - wan_interface : wan1
-   - Leave the rest default and hit Next
+   - Leave the rest default and click Next
 
     ![](media/Lab1-3.png)
     ![](media/Lab1-4.png)
@@ -63,6 +68,6 @@
 #### Lab complete move onto Lab 2
 
 >[!NOTE]
->As this is a wireless training Lab most of the initial templates have been configured for you, if you're curious please take the time to look through them as they likely **won't** be touched on in later labs 
+>As this is a wireless training Lab most of the initial templates have been configured for you, if you're curious please take the time to look through them as the majority of them we won't explore as part of this lab.
 
 

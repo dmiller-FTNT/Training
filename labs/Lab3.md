@@ -33,7 +33,7 @@
      - Bands : 802.11 be/ax/ac/n/a
      - Short Guard Interval : Toggle On
      - Transmit Power: Toggle dBm and set to 10 dBm
-     - SSID : Tunneled
+     - SSID : Manual
      - Advanced Options 
     - Airtime-Fairness : Toggle On
    - Radio 3 :
@@ -43,7 +43,7 @@
      - Channel Width : 80MHz
      - Short Guard Interval : Toggle On
      - Transmit Power: Toggle Percent : 100%
-     - SSID : Tunneled
+     - SSID : Manual
      - Advanced Options 
      - Airtime-Fairness : Toggle On
    - Radio 4:

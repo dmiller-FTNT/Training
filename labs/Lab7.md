@@ -103,12 +103,16 @@
       - Services : All
       - Nat : Enabled
       - Leave the rest and click OK add a change note
+     
+1. Navagate to Device Manager > Provisioning Templates > Certificate ( might be hidden under ...) and go into "Certificate Operations"
+      - Select FGTBr01 and click OK
+      - Wait for it to get that certificate via scep
 
 1. Navagate to Device & Group > FGTBr01 > Cli Configurations > Firewall > Auth-Portal
    - Portal-addr : portal.fortiacme.net
    - Click Ok
 2. Navagate to Device & Group > FGTBr01 > Cli Configurations > user > Settings
-   - Auth-cert : fortiacme.star
+   - Auth-cert : portal
    - Auth-type : http and https
    - Click Ok
 

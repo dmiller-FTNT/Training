@@ -18,7 +18,7 @@
    - Name (CN) : radius.fortiacme.net
    - Subject Alternate Name > DNS : radius.fortiacme.net
    - Click Save
-3. Navagate to Authenticaton > Radius Service > General
+3. Navagate to Autheticaton > Radius Service > General
    - Assign your Radius.Service to both EAP Server and RADSEC Server Certificates, And change Local CA's to the FortiAcme Intermediate
 ![](media/Lab5-1.png)
    - Click Ok

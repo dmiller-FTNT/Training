@@ -2,9 +2,7 @@ FortiAIOps intergration
 
 Note that FortiAnalyzer in your lab is set up to forward all logs to AIOPS.
 
-
 Log into FortiAnalyzer and Authroize your device.
-
 
 Authorize the device
 
@@ -12,7 +10,7 @@ In our case this will be part of the root ADOM.
 
 click ok and then close.
 
-Navigate to System Settings -> Advanced
+Navigate to System Settings -> Advanced ->
 Log Forwarding Tab
 Create New
 
@@ -21,76 +19,45 @@ Remote Server Type : Syslog
 
 Click OK
 
+Navigate to your fortigate
+https://172.31.1(PodID).200
 
-Log into FortiManager
+Admin 
+No Password
 
-System Settings
-Fabric Management.
+Change it to Fortinet4A!!
 
-Toggle Status to Enable
+![alt text](image.png)
 
-Confirm
-![alt text](media/lab4-20.png)
 
-Set Status to Enable
+Select Login Read Only
 
-Set Role to Standalone
-Click Apply
+Go to system then settings
+Under the access tab download the HTTPS CA Certificate
 
-![alt text](media/lab4-21.png)
+![alt text](image-1.png)
 
+Logout of your FortiGate.
 
 Login to AIOps
 
-First we need to add the certificates from FortiAutheticator.
+Goto System -> CA Certificates
+![alt text](image-2.png)
 
-Navigate to Security Fabric
-CA Certificates
+Install CA Certificate
+Select the certificate from your fortigate
+Certificate Name FGTBr01
 
-Install your fortiacme Root then intermediate certificate
-followed by your star certificates.
+Note if you change your HTTPS certificate due to an upgrade or a cert being loaded then this will need to be updated. Its recormended that customers use a wildcard cert here.
 
-![alt text](media/lab4-19.png)
+Cick on Inventory then Managed FortiGates
+Click ADD Enter the IP or hostname of your fortigate in our case 172.31.1(PODID).200 eg for Pod1 172.31.101.200
 
-In Security Fabric Menu 
-Select Fabric Connector
-Set the Deployment mode to Fortimanager
-Select Connect New
+username admin
+password Fortinet4A!!
 
+![alt text](image-3.png)
 
-Enter the IP of your fortimanger 172.30.100.11
-![alt text](media/lab4-18.png)
+Shortly you Should see the Fortigate come online
+![alt text](image-5.png)
 
-This will show Connected.
-
-Click on Authrorize
-
-Accept the Certificate
-
-![alt text](media/lab4-22.png)
-
-Log into fortimanager
-
-Fabric View
-
-Enable FortiAIOPS fabric connector
-![alt text](media/lab4-23.png)
-
-Toggle to enabel then Authrorize the AIOPS connector.
-
-![
-    
-](media/lab4-24.png)
-
-Confirm the action
-
-![alt text](media/lab4-26.png)
-
-Click Save
-
-You will now see the AIOPS connector enabled.
-
-Go back to AIOPS 
-
-Select the Root Adom by clicking on the adom on the top bar.
-then select root

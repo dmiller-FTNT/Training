@@ -1,4 +1,4 @@
-Now we have AIOPS intergrated we should review the licencing that is in place.
+Licencing Review
 
 Navigate to System-> Licencing
 ![alt text](media/Lab9-Skeleton-6.png)

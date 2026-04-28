@@ -161,7 +161,7 @@
 1.  Do a full install ( policy and Device ) to FGTBr01
 
 #### Testing
-16. It works, Might require some accepting of certs user either user1 or user2 with the password you set
+16. Connect to your SSID, use either username or password and provide any certificate ( it doesn't check ). It might require some accepting of the certs user if you didn't add your Root and Intermediate.
 
 #### Lab complete move onto Lab 6
 

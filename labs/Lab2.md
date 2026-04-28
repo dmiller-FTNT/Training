@@ -25,6 +25,8 @@
 
 >[!TIP]
 > Under Managed Fortiswitches > Cli Configuration > Switch-Profile, you can find the ability to change the the default password on fortiswitches
+
+Do not make changes to the default profile this will cause an issue. If you want to change the password please create a new profile and define that profile as a best practice.
 >
 > ![](media/Lab2-2.png)
 

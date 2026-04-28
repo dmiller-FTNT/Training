@@ -22,6 +22,7 @@
   - Name : SSLD Inspection
   - Inspection Method : Full SSL Inspection
   - CA Certificate : ssld_cert
+  - DNS over Quick Block
   - OK and add changenote
 
 5. Navagate to Policy & Objects > Policy Packages > FGTBranch Policy and edit one of your internet boud SSID's ( I suggest 802.1x )

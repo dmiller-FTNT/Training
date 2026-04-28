@@ -25,7 +25,7 @@ Click OK
 Log into FortiManager
 
 System Settings
-Fabric Management
+Fabric Management.
 
 Toggle Status to Enable
 

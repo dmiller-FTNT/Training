@@ -4,15 +4,15 @@ To Import A MAP into your AIOPS this is supported
 
 
 Open Wireless then Wi-Fi Maps
-![alt text](image-6.png)
+![alt text](media/lab10-1.png)
 
 Click on Import
 Select File
 AIOPS-TRAINING-MAP.esx
-![alt text](image-7.png)
+![alt text](media/lab10-2.png)
 
 Open the File Tree
-![alt text](image-9.png)
+![alt text](media/lab10-3.png)
 
 You will see the AP is automatically placed.
 
@@ -20,7 +20,7 @@ This is because we ensured the similated AP in the Ekahau File Matches the same 
 
 To rename the building
 Click on the pipe icons and select edit.
-![alt text](image-11.png)
+![alt text](media/lab10-4.png)
 
 Reame the Building to HQ
 
@@ -31,14 +31,14 @@ Lets Rename this to Fortinet
 
 We can do the same for the Floor Plan so lets rename this to Main
 
-![alt text](image-12.png)
+![alt text](media/lab10-5.png)
 
 If we want to Add a Building 
 We can do this also and then add a floor and a map
 
 Create a Building called Vancouver
 
-![alt text](image-13.png)
+![alt text](media/lab10-6.png)
 
 Here we can add image file in jpg png and jpeg formats.
 
@@ -52,13 +52,13 @@ Set the Name as Main
 To Calibrate the floorplan put the blue Mesure tool over the elevators and set this distance to 32ft
 
 Then Click Save
-![alt text](image-14.png)
+![alt text](media/lab10-7.png)
 
 To Unlock the Map Select unlock Map on the top Left of the map window
 
 You can then select the AP you want to place on the map
 
-![alt text](image-15.png)
+![alt text](media/lab10-8.png)
 
 Drop the AP on the floorplan. Click and Drag. 
 
@@ -70,4 +70,4 @@ Change the Band to 5 or 6Ghz dependent on the device you have connected to the A
 
 Scroll though the availible options here.
 
-![alt text](image-17.png)
+![alt text](media/lab10-9.png)

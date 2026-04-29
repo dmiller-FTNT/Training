@@ -27,7 +27,7 @@ No Password
 
 Change it to Fortinet4A!!
 
-![alt text](image.png)
+![alt text](media/lab4-1.png)
 
 
 Select Login Read Only
@@ -35,14 +35,14 @@ Select Login Read Only
 Go to system then settings
 Under the access tab download the HTTPS CA Certificate
 
-![alt text](image-1.png)
+![alt text](media/lab4-2.png)
 
 Logout of your FortiGate.
 
 Login to AIOps
 
 Goto System -> CA Certificates
-![alt text](image-2.png)
+![alt text](media/lab4-3.png)
 
 Install CA Certificate
 Select the certificate from your fortigate
@@ -56,8 +56,8 @@ Click ADD Enter the IP or hostname of your fortigate in our case 172.31.1(PODID)
 username admin
 password Fortinet4A!!
 
-![alt text](image-3.png)
+![alt text](media/lab4-4.png)
 
 Shortly you Should see the Fortigate come online
-![alt text](image-5.png)
+![alt text](media/lab4-5.png)
 

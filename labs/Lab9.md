@@ -1,4 +1,4 @@
-Licencing Review
+AIOPS Licencing Review
 
 Navigate to System-> Licencing
 ![alt text](media/Lab9-Skeleton-6.png)

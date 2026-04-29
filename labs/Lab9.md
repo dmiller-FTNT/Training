@@ -1,4 +1,20 @@
-#### AIOPS Licensing Review
+#### Lab 9 - AIOPS Licensing Review
+
+| Device     | Username/PW        |
+| ---------- | ------------------ |
+| FortiAIOPS | admin/fortinet4A!! |
+
+> [!NOTE]
+> **FortiAIOPS and what your licences unlock**
+>
+> FortiAIOPS is a cloud-delivered AIOps platform that ingests telemetry from your Fortinet infrastructure and applies machine learning to deliver proactive monitoring, root cause analysis, and actionable insights. Unlike traditional monitoring dashboards that show you what is happening right now, FortiAIOPS learns what is *normal* for your specific environment and alerts you when behaviour deviates from that baseline — often before users even notice a problem.
+>
+> **Licence types and what they cover:**
+> - **SD-WAN Licence** — Enables FortiAIOPS to monitor SD-WAN link health, path selection, SLA performance, and application experience across WAN links. It includes forecasting capabilities that predict future link utilisation based on historical patterns.
+> - **Monitoring and Analytics Licence** — Covers wireless and wired monitoring: AP health, client experience, SLA scoring, RF analysis, and AI Insights for the wireless environment. Each managed FortiGate with associated APs consumes one licence.
+>
+> **Why licencing via FortiGuard matters:**
+> FortiGuard is Fortinet's global threat intelligence and service delivery network. Routing licence updates through FortiGuard means FortiAIOPS always has the latest feature entitlements without requiring manual licence file management. For air-gapped or restricted environments where FortiGuard access is not available, the manual upload option via FortiCare provides an alternative.
 
 1. Navigate to System > Licensing
 
@@ -21,5 +37,8 @@
 4. Confirm that you are getting logs from FAZ to your AIOPS
   - Navigate to Logs and Reports. Under FortiGate, you should see Event logs
   - Check that you have Wi-Fi Events and FortiSwitch Events
+
+> [!TIP]
+> If you do not see log data flowing, go back to FortiAnalyzer and verify the log forwarding configuration from Lab 4. FortiAIOPS needs a consistent stream of logs to build its baselines — gaps in log data will affect the quality of AI Insights in the later labs.
 
 #### Lab complete — move on to Lab 10

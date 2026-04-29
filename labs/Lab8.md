@@ -42,3 +42,5 @@ Push
 
 Profit
 
+#### Lab complete — move on to Lab 9
+

@@ -61,3 +61,5 @@
   - Scroll through the available options
 
   ![alt text](media/lab10-9.png)
+
+#### Lab complete — move on to Lab 11

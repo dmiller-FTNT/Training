@@ -65,3 +65,5 @@
 
   - High amounts of red indicate a high duty cycle, which is the RF term for channel utilization
   - Note: Wi-Fi uses unlicensed channels that are not dedicated solely to Wi-Fi
+
+#### Lab complete — move on to Lab 12

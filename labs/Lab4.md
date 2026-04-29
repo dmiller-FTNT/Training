@@ -48,3 +48,5 @@
   - Shortly, you should see the FortiGate come online
 
   ![alt text](media/lab4-5.png)
+
+#### Lab complete — move on to Lab 5

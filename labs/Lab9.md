@@ -21,3 +21,5 @@
 4. Confirm that you are getting logs from FAZ to your AIOPS
   - Navigate to Logs and Reports. Under FortiGate, you should see Event logs
   - Check that you have Wi-Fi Events and FortiSwitch Events
+
+#### Lab complete — move on to Lab 10

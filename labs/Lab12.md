@@ -15,3 +15,5 @@
 3. Click Show FortiAI Insights and select an option to find out more
 
   ![alt text](media/lab12-3.png)
+
+#### Lab complete

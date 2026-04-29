@@ -1,4 +1,4 @@
-MAPS
+FortiAIOPS - MAPS
 
 To Import A MAP into your AIOPS this is supported
 
@@ -44,5 +44,30 @@ Here we can add image file in jpg png and jpeg formats.
 
 You need to provide the dimensions of the floorplan incuding compensating for any white outlines.
 
-import this floorplan
+Use this floorplan as your background image
 
+![alt text](Floorplan.jpeg)
+
+Set the Name as Main
+To Calibrate the floorplan put the blue Mesure tool over the elevators and set this distance to 32ft
+
+Then Click Save
+![alt text](image-14.png)
+
+To Unlock the Map Select unlock Map on the top Left of the map window
+
+You can then select the AP you want to place on the map
+
+![alt text](image-15.png)
+
+Drop the AP on the floorplan. Click and Drag. 
+
+Once you are happy with the location you can click.Lock Map
+
+Note this will grey out the AP from the previous map however this shows the process
+
+Change the Band to 5 or 6Ghz dependent on the device you have connected to the AP and observe.
+
+Scroll though the availible options here.
+
+![alt text](image-17.png)

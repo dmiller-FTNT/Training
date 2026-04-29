@@ -28,7 +28,6 @@
 > **How to leverage it in the enterprise:**
 > - Integrate FortiAuthenticator with Active Directory so users authenticate with their domain credentials — no separate account management required
 > - Use dynamic VLAN assignment to automatically place Sales on the Sales VLAN, Engineering on the Engineering VLAN, and contractors on a restricted VLAN — all from the same SSID
-> - Deploy EAP-TLS with MDM-issued certificates (Intune, Jamf) to eliminate passwords entirely — a stolen device cannot authenticate if its certificate has been revoked
 > - Create time-limited accounts in FortiAuthenticator for contractors and partners without touching AD, with automatic expiry
 > - Combine with FortiNAC for device posture checks — only devices that are patched, managed, and compliant get placed on the corporate VLAN
 

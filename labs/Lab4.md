@@ -33,7 +33,7 @@
 
 3. Navigate to your FortiGate: https://172.31.1(PodID).200
   - Username: admin
-  - Password: (none — change it to Fortinet4A!!)
+  - Password: (none — change it to fortinet4A!!)
 
   ![alt text](media/lab4-1.png)
 
@@ -62,7 +62,7 @@
   - Navigate to Inventory > Managed FortiGates and click Add
   - Enter the IP or hostname of your FortiGate: 172.31.1(PodID).200 (e.g., Pod 1: 172.31.101.200)
   - Username: admin
-  - Password: Fortinet4A!!
+  - Password: fortinet4A!!
 
   ![alt text](media/lab4-4.png)
 

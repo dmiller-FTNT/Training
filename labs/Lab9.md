@@ -1,23 +1,23 @@
-AIOPS Licencing Review
+#### AIOPS Licensing Review
 
-Navigate to System-> Licencing
-![alt text](media/Lab9-Skeleton-6.png)
+1. Navigate to System > Licensing
 
-You can see that you will have 1 SDWAN licence consumed and 2 Monitoring and Analytics Licences Consumed
+  ![alt text](media/Lab9-Skeleton-6.png)
 
-If you select System - > FortiGuard
-FortiAIOPS updates the licence via fortiguard however you can upload the licence file from forticare by using the manual update file option seen here
+  - You will see 1 SD-WAN license and 2 Monitoring and Analytics licenses consumed
 
-![alt text](media/Lab9-Skeleton-8.png)
+2. Navigate to System > FortiGuard
 
-When you register a new FortiAIOPS you will need the system ID
+  ![alt text](media/Lab9-Skeleton-8.png)
 
-this is found by clicking the Manual Update butten then "click here to know how to get a licence file?"
-In step one you are presented with the system ID. This is required for inital registration.
+  - FortiAIOPS updates the license via FortiGuard; however, you can upload the license file from FortiCare using the manual update file option
 
-![alt text](media/Lab9-Skeleton-9.png)
+3. When you register a new FortiAIOPS, you will need the System ID
+  - Click the Manual Update button, then select "Click here to know how to get a license file?"
+  - In step one, you are presented with the System ID, which is required for initial registration
 
-Confirm that you are getting logs from FAZ to your AIOPS
+  ![alt text](media/Lab9-Skeleton-9.png)
 
-Logs and Reports
- Under fortigate you should see Event logs. Check that you have Wifi Events and FortiSwitch Events
+4. Confirm that you are getting logs from FAZ to your AIOPS
+  - Navigate to Logs and Reports. Under FortiGate, you should see Event logs
+  - Check that you have Wi-Fi Events and FortiSwitch Events

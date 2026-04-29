@@ -1,73 +1,63 @@
-FortiAIOPS - MAPS
+#### FortiAIOPS - MAPS
 
-To Import A MAP into your AIOPS this is supported
+1. Navigate to Wireless > Wi-Fi Maps
 
+  ![alt text](media/lab10-1.png)
 
-Open Wireless then Wi-Fi Maps
-![alt text](media/lab10-1.png)
+2. Import a map
+  - Click Import and select the file: AIOPS-TRAINING-MAP.esx
 
-Click on Import
-Select File
-AIOPS-TRAINING-MAP.esx
-![alt text](media/lab10-2.png)
+  ![alt text](media/lab10-2.png)
 
-Open the File Tree
-![alt text](media/lab10-3.png)
+3. Open the file tree to view the imported map
 
-You will see the AP is automatically placed.
+  ![alt text](media/lab10-3.png)
 
-This is because we ensured the similated AP in the Ekahau File Matches the same name as your deployed AP.
+  - The AP is automatically placed because the simulated AP in the Ekahau file matches the name of your deployed AP
 
-To rename the building
-Click on the pipe icons and select edit.
-![alt text](media/lab10-4.png)
+4. Rename the building
+  - Click the pipe icon and select Edit
 
-Reame the Building to HQ
+  ![alt text](media/lab10-4.png)
 
-Select the AIOPS-TRAINING-MAP and lets rename this
-Click on the : Icon and select edit
+  - Rename the building to HQ
 
-Lets Rename this to Fortinet
+5. Rename the map and floor plan
+  - Select AIOPS-TRAINING-MAP, click the : icon and select Edit
+  - Rename the map to Fortinet
+  - Rename the floor plan to Main
 
-We can do the same for the Floor Plan so lets rename this to Main
+  ![alt text](media/lab10-5.png)
 
-![alt text](media/lab10-5.png)
+6. Add a new building
+  - Create a building called Vancouver, then add a floor and a map
 
-If we want to Add a Building 
-We can do this also and then add a floor and a map
+  ![alt text](media/lab10-6.png)
 
-Create a Building called Vancouver
+  - Image files in jpg, png, and jpeg formats are supported
+  - Provide the dimensions of the floor plan, including any compensation for white outlines
+  - Use the following floor plan as your background image
 
-![alt text](media/lab10-6.png)
+  ![alt text](Floorplan.jpeg)
 
-Here we can add image file in jpg png and jpeg formats.
+  - Set the name to Main
+  - To calibrate the floor plan, place the blue Measure tool over the elevators and set the distance to 32ft
+  - Click Save
 
-You need to provide the dimensions of the floorplan incuding compensating for any white outlines.
+  ![alt text](media/lab10-7.png)
 
-Use this floorplan as your background image
+7. Place an AP on the map
+  - Select Unlock Map in the top left of the map window
+  - Select the AP you want to place on the map
 
-![alt text](Floorplan.jpeg)
+  ![alt text](media/lab10-8.png)
 
-Set the Name as Main
-To Calibrate the floorplan put the blue Mesure tool over the elevators and set this distance to 32ft
+  - Click and drag the AP onto the floor plan
+  - When satisfied with the location, click Lock Map
+  - Note: this will grey out the AP from the previous map, which is expected
 
-Then Click Save
-![alt text](media/lab10-7.png)
+8. Observe the band settings
+  - Change the band to 5 or 6 GHz depending on the device connected to the AP and observe
+  - Scroll through the available options
 
-To Unlock the Map Select unlock Map on the top Left of the map window
-
-You can then select the AP you want to place on the map
-
-![alt text](media/lab10-8.png)
-
-Drop the AP on the floorplan. Click and Drag. 
-
-Once you are happy with the location you can click.Lock Map
-
-Note this will grey out the AP from the previous map however this shows the process
-
-Change the Band to 5 or 6Ghz dependent on the device you have connected to the AP and observe.
-
-Scroll though the availible options here.
-
-![alt text](media/lab10-9.png)
+  ![alt text](media/lab10-9.png)

@@ -1,77 +1,67 @@
-Navigate to the AI Insights Menu
+#### FortiAIOPS - AI Insights and Introduction to Troubleshooting
 
-Select the Network Assurance 
+1. Navigate to AI Insights > Network Assurance
 
-This provides a wireless Health Score and identifies the lowest performing AP.
-It also identifies the SLA Score and Shows Success Failures and Details of SLA Violations.
+  ![alt text](media/lab11-1.png)
 
-![alt text](media/lab11-1.png)
+  - Provides a wireless health score and identifies the lowest-performing AP
+  - Also identifies the SLA score and shows successes, failures, and details of SLA violations
+  - Explore this section and find details of the issues that have impacted the scores
 
-Explore this and find details of the issues that have impacted the scores.
+  ![alt text](media/lab11-2.png)
 
-![alt text](media/lab11-2.png)
+  - The summary displays logs translated into plain English for your review and consideration
 
-You will se details in the summary the logs are turned into simple english for your review and consideration.
+  ![alt text](media/lab11-3.png)
 
-![alt text](media/lab11-3.png)
+2. Navigate to Impacted SLAs
 
-Explore this for the other areas.
+  ![alt text](media/lab11-4.png)
 
-Move to imacted SLAs
-![alt text](media/lab11-4.png)
+  - Compare what was previously available in FAZ and FortiOS alone — FortiAIOPS provides the insight needed for effective understanding of your environment
+  - Issues are not only identified, but advice on how to resolve them is also provided
 
-As you look though this and consider what was availible previously to in FAZ and FortiOS alone. The ability for AIOPS to provide the insight you need for effective understanding of your enviroment should be becoming apparant.
+  ![alt text](media/lab11-5.png)
 
-Not only are the issues identifed its giving you advice on how to resolve them.
+3. Configure SLA baselines
+  - SLA is configured in the Configuration section within this menu
+  - Move the "Time to Connect" SLA to Dynamic Baselines
+  - FortiAIOPS learns what is normal for each AP by analyzing logs; since each AP is placed in a different location, baselines may differ per AP
+  - Alternatively, you can configure this by ADOM or FortiGate as desired
 
-![alt text](media/lab11-5.png)
+  ![alt text](media/lab11-6.png)
 
-SLA is configured in the configuration section within this menu
+4. Navigate to Wireless > Wireless Clients
+  - Select a client and click View Details
 
-Move the Time to connect SLA to Dynamic Baselines Configuration.
+  ![alt text](media/lab11-7.png)
 
-AIOPS will learn what is normal for that AP by lookking at logs and as each AP is placed in a different place this may be different for each AP. Alternativley you can do this by ADOM or Fortigate as desired.
+  - You will see detailed information about that client and its current capabilities
+  - Scroll down to AI Insights to find more details on issues and examine the resolution options offered by FortiAIOPS
 
-![alt text](media/lab11-6.png)
+  ![alt text](media/lab11-8.png)
 
-Now Navigate to the following Wireless then Wireless Clients
+  - Review the other menus: Performance, Application, Destinations, Policies, and Logs
+  - Note: Applications require App Inspection to be enabled on your security profile
+  - FortiAIOPS also provides insight into SD-WAN and Forecasting
 
-Select a Client and select view details
+5. Navigate to Wireless > Access Points and select your AP
+  - Note the channel your AP is operating on for 5 GHz
+  - Click View Details, then navigate to Spectrum Analysis
+  - Select the band for 5 GHz and set the channel range to include your channel
+  - Click Start
 
-![alt text](media/lab11-7.png)
+  ![alt text](media/lab11-9.png)
 
-You will get alot of infomration about that client and its current capabilites. Move down the AI Insights and find more details on issues and examine the options to resolve them offered by AIOPS
+6. Run a speed test on your device connected to the AP and scroll down to Duty Cycle
 
-![alt text](media/lab11-8.png)
+  ![alt text](media/lab11-10.png)
 
-Review the other menus of Performance, Application, Destinations, Policies and Logs.
+  - You should notice the duty cycle increase — this is expected, as it is normal to consume airtime when moving data during a speed test
+  - Consistently high channel utilization under normal operation is where it becomes a problem, reinforcing the need for capacity planning
+  - Review the spectrogram to see the duty cycle over time
 
-Note Applications require APP inspection to be enabled on your profile.
+  ![alt text](media/lab11-11.png)
 
-AIOPS provides Insight in SDWAN and Forcasting.
-
-Click on Wireless -> Access Points then select your AP
-
-Make a mental note of what Channel your operating on on 5ghz
-
-Click on view details.
-
-Navigate to Spectrum Analysis
-
-Select the Band for 5ghz and the Channel Range to include your channel.
-
-Click Start
-
-![alt text](media/lab11-9.png)
-
-On your device connected to your AP run speedtest and scroll down to duty cycle.
-
-![alt text](media/lab11-10.png)
-
-You should notice this increases. Consider though this is normal. its normal to consume airtime when we are moving data during something like a speedtest. If we see high channel utilization consistently under normal operation this is where it becomes a problem and re enforces the requirement to consider capacity planning for networks.
-
-You can review the spectorgram as this shows the duty cycle over time. 
-
-![alt text](media/lab11-11.png)
-
-If you see alot of red it shows high duty cycle which is the RF term for Channel Utlization. However we normally only think about Channel utilization in Wi-Fi terms. Remember WiFi uses channels that dont have licencing and are not dedicated just to Wi-Fi.
+  - High amounts of red indicate a high duty cycle, which is the RF term for channel utilization
+  - Note: Wi-Fi uses unlicensed channels that are not dedicated solely to Wi-Fi

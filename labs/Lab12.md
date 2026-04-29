@@ -1,13 +1,17 @@
-Select SD-WAN and Insights
+#### FortiAIOPS - SD-WAN Insights
 
-![alt text](media/lab12-1.png)
+1. Navigate to SD-WAN > Insights
 
-In the Insights review what is shown and condsider the use cases
+  ![alt text](media/lab12-1.png)
 
-![alt text](media/lab12-2.png)
+  - Review what is shown and consider the use cases
 
-In the forcasting look at what is shown for today.
+2. Navigate to Forecasting
 
-Click the Show FortiAI Insights and select an option to find out more.
+  ![alt text](media/lab12-2.png)
 
-![alt text](media/lab12-3.png)
+  - Review what is shown for today
+
+3. Click Show FortiAI Insights and select an option to find out more
+
+  ![alt text](media/lab12-3.png)
